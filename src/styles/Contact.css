@@ -1,0 +1,151 @@
+/*
+File name: Contact.css
+Student's Name: Zahra Maryam
+Student ID: 301000279
+Date: September 20, 2025
+*/
+
+/* ===== CONTACT PAGE STYLES ===== */
+.contact-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* ===== HEADER SECTION ===== */
+.contact-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.contact-header h1 {
+  font-size: 2.5rem;
+  color: #1d4ed8;
+  margin-bottom: 1rem;
+}
+
+.contact-header p {
+  font-size: 1.1rem;
+  color: #6b7280;
+}
+
+/* ===== CONTACT CONTENT SECTION ===== */
+.contact-content {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 3rem;
+}
+
+/* ===== CONTACT INFO PANEL ===== */
+.contact-info {
+  background: #f9fafb;
+  padding: 2rem;
+  border-radius: 12px;
+  height: fit-content;
+}
+
+.contact-info h3 {
+  color: #374151;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 3px solid #2563eb;
+  padding-bottom: 0.5rem;
+}
+
+.contact-details p {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  color: #4b5563;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* ===== CONTACT FORM ===== */
+.contact-form {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h3 {
+  color: #374151;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 3px solid #10b981;
+  padding-bottom: 0.5rem;
+}
+
+/* ===== FORM STYLES ===== */
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 1rem;
+  border: 2px solid #e5e7eb;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: inherit;
+  transition: border-color 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.contact-form textarea {
+  resize: vertical;
+  min-height: 120px;
+  margin-bottom: 1rem;
+}
+
+/* ===== SUBMIT BUTTON ===== */
+.submit-button {
+  background-color: #10b981;
+  color: white;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+}
+
+.submit-button:hover {
+  background-color: #059669;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3);
+}
+
+/* ===== MOBILE RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .contact-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+  
+  .contact-header h1 {
+    font-size: 2rem;
+  }
+  
+  .contact-form,
+  .contact-info {
+    padding: 1.5rem;
+  }
+}

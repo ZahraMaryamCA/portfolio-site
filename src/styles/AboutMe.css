@@ -1,0 +1,108 @@
+/*
+File name: AboutMe.css
+Student's Name: Zahra Maryam
+Student ID: 301000279
+Date: September 20, 2025
+*/
+
+/* ===== ABOUT ME PAGE STYLES ===== */
+.about-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* ===== HEADER SECTION ===== */
+.about-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.about-header h1 {
+  font-size: 2.5rem;
+  color: #1d4ed8;
+  margin-bottom: 1rem;
+}
+
+/* ===== MAIN CONTENT SECTION ===== */
+.about-content {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+/* ===== PHOTO SECTION ===== */
+.about-photo {
+  text-align: center;
+}
+
+.headshot-img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.headshot-img:hover {
+  transform: scale(1.05);
+}
+
+/* ===== TEXT SECTION ===== */
+.about-text h2 {
+  color: #374151;
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 3px solid #2563eb;
+  padding-bottom: 0.5rem;
+}
+
+.about-text p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #4b5563;
+  margin-bottom: 1.5rem;
+}
+
+/* ===== RESUME BUTTON ===== */
+.resume-button {
+  display: inline-block;
+  background-color: #10b981;
+  color: white;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-top: 1rem;
+  transition: all 0.3s ease;
+}
+
+.resume-button:hover {
+  background-color: #059669;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3);
+}
+
+/* ===== MOBILE RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .about-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    text-align: center;
+  }
+  
+  .about-header h1 {
+    font-size: 2rem;
+  }
+  
+  .about-text h2 {
+    font-size: 1.5rem;
+  }
+  
+  .headshot-img {
+    max-width: 250px;
+  }
+}

@@ -1,0 +1,20 @@
+/*
+File name: Footer.css
+Student's Name: Zahra Maryam
+Student ID: 301000279
+Date: [September 20, 2025]
+*/
+
+/* ===== FOOTER STYLES ===== */
+.footer {
+  background-color: #374151;
+  color: white;
+  text-align: center;
+  padding: 2rem 0;
+  margin-top: auto;
+}
+
+.footer-content p {
+  margin: 0.5rem 0;
+  font-size: 0.9rem;
+}

@@ -1,0 +1,132 @@
+/*
+File name: Home.css
+Student's Name: Zahra Maryam
+Student ID: 301000279
+Date: September 20, 2025
+*/
+
+/* ===== HOME PAGE STYLES ===== */
+.home-page {
+  min-height: calc(100vh - 160px);
+}
+
+/* ===== HERO SECTION ===== */
+.hero-section {
+  background: linear-gradient(135deg, #dbeafe 0%, #f9fafb 100%);
+  padding: 4rem 2rem;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hero-title {
+  font-size: 3rem;
+  color: #1d4ed8;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.hero-subtitle {
+  font-size: 1.5rem;
+  color: #374151;
+  margin-bottom: 1.5rem;
+  font-weight: normal;
+}
+
+.hero-description {
+  font-size: 1.1rem;
+  color: #6b7280;
+  margin-bottom: 2rem;
+  line-height: 1.7;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: #2563eb;
+  color: white;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #1d4ed8;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+}
+
+/* ===== QUICK LINKS SECTION ===== */
+.quick-links {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.quick-links h3 {
+  font-size: 2rem;
+  color: #374151;
+  margin-bottom: 2rem;
+}
+
+.quick-links-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.quick-link-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.3s ease;
+  border: 1px solid #e5e7eb;
+}
+
+.quick-link-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  border-color: #2563eb;
+}
+
+.quick-link-card h4 {
+  color: #2563eb;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.quick-link-card p {
+  color: #6b7280;
+  font-size: 1rem;
+}
+
+/* ===== MOBILE RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.2rem;
+  }
+  
+  .hero-section {
+    padding: 2rem 1rem;
+  }
+  
+  .quick-links-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}

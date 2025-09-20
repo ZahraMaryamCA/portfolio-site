@@ -1,0 +1,115 @@
+/*
+File name: Projects.css
+Student's Name: Zahra Maryam
+Student ID: 301000279
+Date: September 20, 2025
+*/
+
+/* ===== PROJECTS PAGE STYLES ===== */
+.projects-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* ===== HEADER SECTION ===== */
+.projects-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.projects-header h1 {
+  font-size: 2.5rem;
+  color: #1d4ed8;
+  margin-bottom: 1rem;
+}
+
+.projects-header p {
+  font-size: 1.1rem;
+  color: #6b7280;
+}
+
+/* ===== PROJECTS GRID ===== */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  gap: 2rem;
+}
+
+/* ===== PROJECT CARDS ===== */
+.project-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: all 0.3s ease;
+  border: 1px solid #e5e7eb;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* ===== PROJECT IMAGE PLACEHOLDER ===== */
+.project-image-placeholder {
+  height: 200px;
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/* ===== PROJECT CONTENT ===== */
+.project-content {
+  padding: 1.5rem;
+}
+
+.project-content h3 {
+  font-size: 1.5rem;
+  color: #374151;
+  margin-bottom: 0.5rem;
+}
+
+.project-tech {
+  color: #2563eb;
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.project-description {
+  color: #4b5563;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.project-details p {
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+  color: #6b7280;
+}
+
+.project-details strong {
+  color: #374151;
+}
+
+/* ===== MOBILE RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .projects-header h1 {
+    font-size: 2rem;
+  }
+  
+  .project-image-placeholder {
+    height: 150px;
+  }
+}

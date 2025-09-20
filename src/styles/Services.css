@@ -1,0 +1,90 @@
+/*
+File name: Services.css
+Student's Name: Zahra Maryam
+Student ID: 301000279
+Date: September 20, 2025
+*/
+
+/* ===== SERVICES PAGE STYLES ===== */
+.services-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* ===== HEADER SECTION ===== */
+.services-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.services-header h1 {
+  font-size: 2.5rem;
+  color: #1d4ed8;
+  margin-bottom: 1rem;
+}
+
+.services-header p {
+  font-size: 1.1rem;
+  color: #6b7280;
+}
+
+/* ===== SERVICES GRID ===== */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+/* ===== SERVICE CARDS ===== */
+.service-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: all 0.3s ease;
+  border: 1px solid #e5e7eb;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+  border-color: #2563eb;
+}
+
+/* ===== SERVICE ICONS ===== */
+.service-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+/* ===== SERVICE CONTENT ===== */
+.service-card h3 {
+  font-size: 1.3rem;
+  color: #374151;
+  margin-bottom: 1rem;
+}
+
+.service-card p {
+  color: #6b7280;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+/* ===== MOBILE RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .services-header h1 {
+    font-size: 2rem;
+  }
+  
+  .service-card {
+    padding: 1.5rem;
+  }
+}
