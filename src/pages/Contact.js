@@ -50,13 +50,23 @@ const Contact = () => {
     }
     
     // Phone validation
+    const phoneRegex = /^\d{10,}$/; // Just digits, 10 or more
+    if (!formData.phone.trim()) {
+      errors.phone = 'Phone number is required';
+    } else if (!phoneRegex.test(formData.phone.replace(/\D/g, ''))) {
+      errors.phone = 'Please enter at least 10 digits';
+    }
+    
+    /*
     const phoneRegex = /^[\d\s\-\(\)\+]{10,}$/;
     if (!formData.phone.trim()) {
       errors.phone = 'Phone number is required';
     } else if (!phoneRegex.test(formData.phone.replace(/\s/g, ''))) {
       errors.phone = 'Please enter a valid phone number';
     }
-    
+    */
+
+
     // Message validation
     if (!formData.message.trim()) {
       errors.message = 'Message is required';
