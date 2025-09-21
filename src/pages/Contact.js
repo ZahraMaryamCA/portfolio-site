@@ -56,16 +56,6 @@ const Contact = () => {
     } else if (!phoneRegex.test(formData.phone.replace(/\D/g, ''))) {
       errors.phone = 'Please enter at least 10 digits';
     }
-    
-    /*
-    const phoneRegex = /^[\d\s\-\(\)\+]{10,}$/;
-    if (!formData.phone.trim()) {
-      errors.phone = 'Phone number is required';
-    } else if (!phoneRegex.test(formData.phone.replace(/\s/g, ''))) {
-      errors.phone = 'Please enter a valid phone number';
-    }
-    */
-
 
     // Message validation
     if (!formData.message.trim()) {
@@ -163,7 +153,7 @@ const Contact = () => {
                   <span className="contact-icon">📧</span>
                   <div>
                     <strong>Email:</strong>
-                    <p>zahra.maryam@email.com</p>
+                    <p>zmaryamonca@gmail.com</p>
                   </div>
                 </div>
                 <div className="contact-item">
